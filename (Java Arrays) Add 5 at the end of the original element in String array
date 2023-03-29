@@ -1,0 +1,17 @@
+// Follow Up: Loop through all the elements in an String array and add 5 at the end of the original element using for-each loop
+
+public class Main
+{
+	public static void main(String[] args) {
+		String[] arr = {"5","10","92"};
+		int index = 0;
+		
+		for(String e: arr){
+		    arr[index] = e+"5"; 
+		    index++;
+		} 
+		for(String e: arr){
+		    System.out.println(e);
+		}
+	}
+}
