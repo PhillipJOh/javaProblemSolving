@@ -1,0 +1,16 @@
+// Write a Java program to calculate the average value of array elements
+
+public class Main
+{
+	public static void main(String[] args) {
+	   int[] arr = {8,1,2,8,9,10};
+	   int result = 0;
+	   
+	   for(int i=0; i<arr.length; i++) {
+	       result = result + arr[i];
+	   }
+	   double resultDouble = result;
+	   double arrLengthDouble = arr.length;
+	   System.out.println(resultDouble/arrLengthDouble);
+	}
+}
