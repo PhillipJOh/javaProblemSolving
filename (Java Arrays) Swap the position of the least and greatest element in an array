@@ -1,0 +1,29 @@
+// Swap the position of the least and the biggest element in an array
+
+public class Main
+{
+	public static void main(String[] args) {
+		int[] arr = {5,1,2,6,-5,10,4};
+		
+		int max = arr[0]; //5
+		int maxIndex = 0; //0
+		int min = arr[0]; //5
+		int minIndex = 0; //0
+		
+		for(int i=0; i<arr.length; i++){ //0,1
+		    if(max<arr[i]){ //
+		        max=arr[i];
+		        maxIndex=i;
+		    }
+		    if(min>arr[i]){ 
+		        min=arr[i]; //1
+		        minIndex=i; 
+		    }
+		}
+		arr[maxIndex]=min; //{5,1,2,6,-5,-5,4}
+		arr[minIndex]=max; //{5,1,2,6,10,-5,4}
+		
+		for(int i=0; i<arr.length;i++){
+		    System.out.print(arr[i]+" ");
+		}
+	}
