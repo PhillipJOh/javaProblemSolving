@@ -1,0 +1,32 @@
+/* Print out
+        1
+      222
+    33333
+  4444444
+555555555
+*/
+
+public class Main
+{
+	public static void main(String[] args) {
+	    int amount = 1;
+	    int beforeSpace = 4;
+	    int afterSpace = 4;
+	    
+	    for(int i = 1; i<=5; i++){
+	       for(int j = 1; j<=beforeSpace; j++){
+	           System.out.print(' ');
+	       }
+	       beforeSpace--;
+	       for(int k = 1; k<=amount; k++){
+	           System.out.print(i);
+	       }
+	       amount = amount + 2;
+	       for(int z = 1; z<=afterSpace; z++){
+	           System.out.print(' ');
+	       }
+	       afterSpace--;
+	       System.out.println();
+	    }
+	}
+}
